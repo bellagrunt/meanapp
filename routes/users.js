@@ -8,12 +8,17 @@ router.get('/register', (req, res, next) => {
 
 //Authenticate
 router.get('/authenticate', (req, res, next) => {
- res.send('Authenticate');
+ res.send('AUTHENICATE');
 });
 
-//Register
-router.get('/register', (req, res, next) => {
- res.send('REGISTER');
+//profile
+router.get('/profile', (req, res, next) => {
+ res.send('PROFILE');
+});
+
+//validate
+router.get('/validate', (req, res, next) => {
+ res.send('VALIDATE');
 });
 
 module.exports = router;
