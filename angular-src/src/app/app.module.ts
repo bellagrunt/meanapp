@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule, Routes } from '@angular/router';
-// import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule } from './app-routing.module';
 // import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
@@ -19,13 +19,13 @@ import { AuthService } from './services/auth.service';
 import { FlashMessagesModule } from 'angular2-flash-messages';
 import { AuthGuard } from './guards/auth.guard';
 
-const appRoutes: Routes = [
-  { path:'', component: HomeComponent },
-  { path:'register', component: RegisterComponent },
-  { path:'login', component: LoginComponent },
-  { path:'dashboard', component: DashboardComponent, canActivate:[AuthGuard] },
-  { path:'profile', component: ProfileComponent, canActivate:[AuthGuard] },
-]
+// const appRoutes: Routes = [
+//   { path:'', component: HomeComponent },
+//   { path:'register', component: RegisterComponent },
+//   { path:'login', component: LoginComponent },
+//   { path:'dashboard', component: DashboardComponent, canActivate:[AuthGuard] },
+//   { path:'profile', component: ProfileComponent, canActivate:[AuthGuard] },
+// ]
 
 @NgModule({
   declarations: [
@@ -41,8 +41,8 @@ const appRoutes: Routes = [
     BrowserModule,
     FormsModule,
     HttpModule,
-    // AppRoutingModule,
-    // RouterModule,
+    AppRoutingModule,
+    RouterModule,
     // NgbModule.forRoot(),
     RouterModule.forRoot(appRoutes),
     FlashMessagesModule
