@@ -17,6 +17,6 @@
     "passport":"*",
     "passport-jwt":"*"
   },
-  "author": "Matt Bella",
+  "author": "Matt Bellantoni",
   "license": "ISC"
 }

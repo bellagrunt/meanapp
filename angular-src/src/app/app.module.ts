@@ -44,7 +44,7 @@ import { AuthGuard } from './guards/auth.guard';
     AppRoutingModule,
     RouterModule,
     // NgbModule.forRoot(),
-    RouterModule.forRoot(appRoutes),
+    // RouterModule.forRoot(appRoutes),
     FlashMessagesModule
   ],
   providers: [ValidateService, AuthService, AuthGuard],
